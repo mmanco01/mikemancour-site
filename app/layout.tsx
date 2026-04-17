@@ -1,6 +1,7 @@
 import './globals.css';
 import Link from 'next/link';
 import { contactEmail } from '@/data/media';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Mike Mancour',
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
